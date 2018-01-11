@@ -14,4 +14,4 @@
      service: 
             name=nginx 
             state=started
-            enabled: True
+            enabled=True

@@ -1,0 +1,15 @@
+---
+ - hosts: localhost
+   connection: local
+   tasks:
+    - name: Lunch instance
+      ec2:
+       assign_public_ip: yes
+       aws_access_key: AKIAJB4KT2V5ATF7JILA
+       aws_secret_key: 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
+       instance_type: t2.micro
+       image: ami-d2fa88ae
+       wait: yes
+       group: SSH
+       count: 1
+      register: ec2

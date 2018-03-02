@@ -18,6 +18,7 @@
      
    - name: Instll NodeJS
      shell: curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash - | yum -y install nodejs
+     
   handlers:
    - name: Start Nginx
      service: 
